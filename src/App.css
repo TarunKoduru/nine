@@ -24,7 +24,9 @@ nav {
   right: 0;
   z-index: 1000;
   padding: 5px 10px;
-  background: transparent;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #fff;
+  border-radius: 5px;
 }
 
 .nav-head {
@@ -53,6 +55,7 @@ nav {
 }
 
 .nav-sub a:hover {
+  padding: 8px;
   border-bottom: 2px solid #fff;
   background-color: transparent;
   border-radius: 10px;
@@ -64,13 +67,6 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: 2px solid #fff;
-  border-radius: 10px;
-}
-
-.nav-sub:hover {
-  border-bottom: 2px solid #007BFF;
 }
 
 .icon-box {
@@ -81,14 +77,13 @@ nav {
   align-items: center;
   color: #fff;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: 2px solid #fff;
   border-radius: 10px;
   cursor: pointer;
+  background: transparent;
 }
 
 .icon-box:hover {
-  border-bottom: 2px solid #007BFF;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .logo img {
@@ -1840,6 +1835,11 @@ input[type="search"] {
 @media (max-width: 425px) {
   /* Extra small devices */
 
+  nav{
+    position: absolute;
+    bottom: 90%;
+  }
+  
   .nav-head{
     left: 30%;
   }
@@ -1929,10 +1929,16 @@ input[type="search"] {
   }
 
   .contact{
-    width: 100%;
+    width: 95%;
+    height: 95vh;
     top: 10%;
-    right: 60%;
+    right: 56.5%; 
   }
+
+  .conttit h1 {
+    font-size: 40px
+  }
+
   .contact input {
     width: 100%;
   }

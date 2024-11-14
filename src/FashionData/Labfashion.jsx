@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Footer from '../Header/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
@@ -39,37 +39,24 @@ const Labfashion = ({ products, fname }) => {
         setSelectedGender('');
     };
 
-    const filteredProducts = products.filter((product) => {
-        const matchesBrandCategory =
-            selectedBrandCategories.length === 0 ||
-            selectedBrandCategories.includes(product.brand);
+    const filteredProducts = useMemo(() => {
+        return products
+            .filter((product) => {
+                const matchesBrandCategory = !selectedBrandCategories.length || selectedBrandCategories.includes(product.brand);
+                const matchesApparelCategory = !selectedApparelCategories.length || selectedApparelCategories.includes(product.category);
+                const matchesGender = !selectedGender || product.gender === selectedGender;
+                const matchesSearchTerm = product.name.toLowerCase().includes(searchTerm.toLowerCase())
+                    || product.category.toLowerCase().includes(searchTerm.toLowerCase())
+                    || product.brand.toLowerCase().includes(searchTerm.toLowerCase());
 
-        const matchesApparelCategory =
-            selectedApparelCategories.length === 0 ||
-            selectedApparelCategories.includes(product.category);
-
-        const matchesGender =
-            selectedGender === '' || product.gender === selectedGender;
-
-        const matchesSearchTerm =
-            product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            product.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            product.brand.toLowerCase().includes(searchTerm.toLowerCase());
-
-        return matchesBrandCategory && matchesApparelCategory && matchesGender && matchesSearchTerm;
-    });
-
-    const sortedProducts = filteredProducts.sort((a, b) => {
-        const priceA = parseFloat(a.price.replace(/₹|,/g, ''));
-        const priceB = parseFloat(b.price.replace(/₹|,/g, ''));
-
-        if (sortOrder === 'low-to-high') {
-            return priceA - priceB;
-        } else if (sortOrder === 'high-to-low') {
-            return priceB - priceA;
-        }
-        return 0;
-    });
+                return matchesBrandCategory && matchesApparelCategory && matchesGender && matchesSearchTerm;
+            })
+            .sort((a, b) => {
+                const priceA = parseFloat(a.price.replace(/₹|,/g, ''));
+                const priceB = parseFloat(b.price.replace(/₹|,/g, ''));
+                return sortOrder === 'low-to-high' ? priceA - priceB : sortOrder === 'high-to-low' ? priceB - priceA : 0;
+            });
+    }, [products, searchTerm, selectedBrandCategories, selectedApparelCategories, sortOrder, selectedGender]);
 
     return (
         <div>
@@ -97,7 +84,7 @@ const Labfashion = ({ products, fname }) => {
                         </div><br />
                     </details>
                     <details>
-                        <summary>Appreal</summary>
+                        <summary>Apparel</summary>
                         <div className='apparel-filters'>
                             {allApparelCategories.map((category, index) => (
                                 <div key={index}>
@@ -158,7 +145,7 @@ const Labfashion = ({ products, fname }) => {
 
                 <div className='products-full'>
                     <div className='products-half'>
-                        <h1>APPREAL</h1>
+                        <h1>APPAREL</h1>
                     </div>
                     <div className='product-search'>
                         <h3 style={{ color: "#16203b", fontWeight: "600" }}>SEARCH</h3>
@@ -170,10 +157,10 @@ const Labfashion = ({ products, fname }) => {
                         />
                     </div>
                     <div className="products-grid">
-                        {sortedProducts.length > 0 ? (
-                            sortedProducts.map((product) => (
+                        {filteredProducts.length > 0 ? (
+                            filteredProducts.map((product) => (
                                 <Link to={`/product/${product.id}`} key={product.id} className="product-card">
-                                    <img src={product.imageUrl} alt={product.name} className="product-image" />
+                                    <img src={product.imageUrl} alt={product.name} className="product-image" loading='lazy' />
                                     <div className="product-info">
                                         <p className="product-category">{product.category}</p>
                                         <p className="product-brand">{product.brand}</p>

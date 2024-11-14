@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Use HashRouter here
 import { ProductsProvider } from '../FashionData/ProductsContext';
 import Nav from '../Route/Nav';
 import About from '../SecondPage/About';
@@ -31,11 +31,7 @@ const Home = () => {
 
   return (
     <ProductsProvider>
-      <BrowserRouter
-        future={{
-          v7_relativeSplatPath: true,
-          v7_startTransition: true,
-        }}>
+      <Router>
         <Nav setUsername={setUsername} username={username} />
         <div className="content">
           <Routes>
@@ -58,7 +54,7 @@ const Home = () => {
             <Route path="*" element={<div>Page Not Found</div>} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </Router>
     </ProductsProvider>
   );
 };

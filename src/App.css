@@ -1931,7 +1931,10 @@ input[type="search"] {
   .contact{
     width: 100%;
     top: 10%;
-    right: 59%;
+    right: 60%;
+  }
+  .contact input {
+    width: 100%;
   }
   .btnd, .btnd1 {
     width: 50px;
@@ -1941,7 +1944,6 @@ input[type="search"] {
   h1, h2, h3 {
     font-size: 20px;
   }
-
 
   footer{
     width: 100%;

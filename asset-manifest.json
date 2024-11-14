@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nine/static/css/main.5e43ec8a.css",
+    "main.css": "/nine/static/css/main.5c7295c5.css",
     "main.js": "/nine/static/js/main.4bc7c36d.js",
     "static/js/453.94ac07b5.chunk.js": "/nine/static/js/453.94ac07b5.chunk.js",
     "static/media/novitec-ferrari-296-gts-aero-upper-view-21.webp": "/nine/static/media/novitec-ferrari-296-gts-aero-upper-view-21.5e4f7150369976a9c264.webp",
@@ -207,12 +207,12 @@
     "static/media/slick.ttf": "/nine/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/nine/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/nine/index.html",
-    "main.5e43ec8a.css.map": "/nine/static/css/main.5e43ec8a.css.map",
+    "main.5c7295c5.css.map": "/nine/static/css/main.5c7295c5.css.map",
     "main.4bc7c36d.js.map": "/nine/static/js/main.4bc7c36d.js.map",
     "453.94ac07b5.chunk.js.map": "/nine/static/js/453.94ac07b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e43ec8a.css",
+    "static/css/main.5c7295c5.css",
     "static/js/main.4bc7c36d.js"
   ]
 }

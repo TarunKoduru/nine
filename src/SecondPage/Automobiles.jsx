@@ -50,7 +50,7 @@ const Automobiles = ({ title, Aname, description, data, image, head, aboutpic, c
             <div>
                 <div>
                     <div className="onetitcb">
-                        <img srcSet={image} alt='Image' className="one-image" loading='lazy' />
+                        <img srcSet={image} alt='pic' className="one-image" loading='lazy' />
                         <div className={`onetitecb ${cbclass}`}>
                             <h1>{title}</h1>
                             <h1>{description}</h1>

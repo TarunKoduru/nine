@@ -1844,7 +1844,7 @@ input[type="search"] {
   .nav-head{
     left: 30%;
   }
-  .container1{
+  .mainp{
     height: auto;
     width: auto;
   }
@@ -1990,9 +1990,9 @@ input[type="search"] {
   }
   .contact{
     height: auto;
-    width: 90%;
+    width: 80%;
     top: 10%;
-    right: 58.5%; 
+    right: 59%; 
     box-shadow: none;
   }
   .cntform{

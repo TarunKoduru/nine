@@ -68,7 +68,7 @@ const Main = () => {
 
     return (
         <div>
-            <div>
+            <div className='mainp'>
                 <div>
                     <div className='container1'>
                         <img src={Images.mainpic} alt='bentley-mulliner-batur-x-ducati-diavel' className="item-image" loading='lazy' />

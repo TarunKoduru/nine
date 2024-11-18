@@ -1,0 +1,7 @@
+# Enforce LF for all files
+* text=auto eol=lf
+
+# Specific overrides for binary files (optional)
+*.png binary
+*.jpg binary
+*.pdf binary

@@ -2179,11 +2179,7 @@ input[type="search"] {
     height: auto;
   }
   .main-image{
-    width:130%;
-  }
-  .image-gallery{
-    margin-top: 50px;
-    margin-left: 30px;
+    width:100%;
   }
   .lastview{
     display: flex;

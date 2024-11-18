@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nine/static/css/main.5591d309.css",
-    "main.js": "/nine/static/js/main.4bc7c36d.js",
+    "main.css": "/nine/static/css/main.05b14c0f.css",
+    "main.js": "/nine/static/js/main.ff1f47e3.js",
     "static/js/453.94ac07b5.chunk.js": "/nine/static/js/453.94ac07b5.chunk.js",
     "static/media/novitec-ferrari-296-gts-aero-upper-view-21.webp": "/nine/static/media/novitec-ferrari-296-gts-aero-upper-view-21.5e4f7150369976a9c264.webp",
     "static/media/chiron-pur-sport-iv-1-desktop.webm": "/nine/static/media/chiron-pur-sport-iv-1-desktop.357d6403a533b10dce7c.webm",
@@ -134,6 +134,7 @@
     "static/media/f1.webp": "/nine/static/media/f1.7dae68bae223a731d618.webp",
     "static/media/original.webp": "/nine/static/media/original.9f5ead86e1bdd720b580.webp",
     "static/media/image-14.webp": "/nine/static/media/image-14.8328731fc359262ebdad.webp",
+    "static/media/gallery-1.webp": "/nine/static/media/gallery-1.1193ec0252d6d01e9bcb.webp",
     "static/media/gallery-6.webp": "/nine/static/media/gallery-6.c3782dd576ba02b5b9fb.webp",
     "static/media/gallery-5-1280x800.webp": "/nine/static/media/gallery-5-1280x800.7ae5156a309ce31cf6dd.webp",
     "static/media/gallery-2-1280x800.webp": "/nine/static/media/gallery-2-1280x800.2ee37cc6bee73a78c31c.webp",
@@ -207,12 +208,12 @@
     "static/media/slick.ttf": "/nine/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/nine/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/nine/index.html",
-    "main.5591d309.css.map": "/nine/static/css/main.5591d309.css.map",
-    "main.4bc7c36d.js.map": "/nine/static/js/main.4bc7c36d.js.map",
+    "main.05b14c0f.css.map": "/nine/static/css/main.05b14c0f.css.map",
+    "main.ff1f47e3.js.map": "/nine/static/js/main.ff1f47e3.js.map",
     "453.94ac07b5.chunk.js.map": "/nine/static/js/453.94ac07b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5591d309.css",
-    "static/js/main.4bc7c36d.js"
+    "static/css/main.05b14c0f.css",
+    "static/js/main.ff1f47e3.js"
   ]
 }

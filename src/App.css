@@ -1844,6 +1844,10 @@ input[type="search"] {
   .nav-head{
     left: 30%;
   }
+  .container1{
+    height: auto;
+    width: auto;
+  }
 
   .container1, .item-image {
     height: 100vh;

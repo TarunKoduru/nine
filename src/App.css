@@ -795,8 +795,6 @@ td {
   border-radius: 20px;
   top: 100px;
   padding: 70px;
-  margin-left: 250px;
-  margin-right: 250px;
   color: #fff;
   position: relative;
   display: flex;
@@ -1990,9 +1988,8 @@ input[type="search"] {
   }
   .contact{
     height: auto;
-    width: 80%;
+    width: auto;
     top: 10%;
-    right: 59%; 
     box-shadow: none;
   }
   .cntform{

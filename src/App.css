@@ -1985,11 +1985,15 @@ input[type="search"] {
     font-size: 15px;
   }
   .contact{
-    width: 100%;
     height: auto;
+    width: 90%;
     top: 10%;
     right: 58.5%; 
     box-shadow: none;
+  }
+  .cntform{
+    width: auto;
+    height: auto;
   }
 
   .conttit h1 {

@@ -1835,7 +1835,7 @@ input[type="search"] {
   /* Extra small devices */
 
   nav{
-    position: absolute;
+    position: fixed;
     bottom: 90%;
   }
   
